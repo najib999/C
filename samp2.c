@@ -2,7 +2,9 @@
 #include <stdlib.h>
 
 /*
-Initializes a Cartesian coordinate point using a function and structure object.
+
+Initializes a Cartesian coordinate struct point using a function which returns a struct object.
+
 */
 
 struct point {
