@@ -3,7 +3,7 @@
 
 /*
 
-Calculates and prints out the GCD of two integers using Euclidean Algorithm.
+Calculates and prints out the GCD of two integers by recursion using Euclidean Algorithm.
 
 */
 
