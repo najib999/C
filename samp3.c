@@ -5,7 +5,7 @@
 /*
 
 Initializes two Cartesian coordinate struct points using a function and calculates the distance between them and the
-lengths of individual points .
+lengths of individual points. Also, using pointers to pass struct. 
 
 */
 
@@ -23,8 +23,8 @@ struct point init_point() {
     return temp;
 };
 
-double dista(struct point a, struct point b){
-    return sqrt((a.x-b.x)*(a.x-b.x)  + (a.y-b.y)*(a.y-b.y));
+double dista(struct point a, struct point *b) {
+    return sqrt((a.x-(*b).x)*(a.x-(*b).x)  + (a.y-(*b).y)*(a.y-(*b).y));
 }
 
 double modu(struct point a){
@@ -39,7 +39,7 @@ int main()
     pt2 = init_point();
     printf("P1 = <%d, %d>\n", pt1.x, pt1.y);
     printf("P2 = <%d, %d>\n", pt2.x, pt2.y);
-    dist = dista(pt1, pt2);
+    dist = dista(pt1, &pt2);
     printf("Distance between the points = %f\n", dist);
     printf("Length of P1 = %f, length of P2 = %f\n", modu(pt1), modu(pt2));
     return 0;
