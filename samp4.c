@@ -1,7 +1,7 @@
 typedef struct {
     int x;
     int y;
-}Cor;
+} Cor;
 
 void print(const Cor *a){
     printf("(x,y) = <%d,%d>\n", a->x, a->y);
