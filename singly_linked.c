@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdbool.h>
 
+///defines a type node
+
 typedef struct node {
     int n;
     struct node *next;
