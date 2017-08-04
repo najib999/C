@@ -23,6 +23,7 @@ node* create(int x){
 node* inst(int x){
     node* temp = root;
     node* a = create(x);
+    
     node* ins(node* a, node* temp){
         if (a->data > temp->data){
             if (temp->right == NULL){
@@ -45,6 +46,7 @@ node* inst(int x){
             }
         }
     }
+    
     if (root == NULL){
         root = a;
         return a;
